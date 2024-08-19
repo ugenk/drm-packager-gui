@@ -7,9 +7,4 @@ Requirements:
 
 * You will need ffmpeg and packager (shaka-packager) in your PATH.
 * Python should be compiled with Tk support, on mac: `brew install python-tk`
-* You will need your widevine credentials
-
-TODO:
-
-add more drm systems support
-
+* You will need your widevine, fairplay or playready credentials
