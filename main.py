@@ -66,9 +66,12 @@ class ShakaPackagerGUI:
 
         self.aes_key_entry = tk.Entry(self.widevine_frame, width=50)
         self.aes_key_entry.grid(row=1, column=1, padx=10, pady=10)
+        # key and iv from https://shaka-project.github.io/shaka-packager/html/tutorials/widevine.html#widevine-test-credential
+        self.aes_key_entry.insert(0, '1ae8ccd0e7985cc0b6203a55855a1034afc252980e970ca90e5202689f947ab9')
 
         self.aes_iv_label = tk.Label(self.widevine_frame, text="AES Signing IV")
         self.aes_iv_label.grid(row=2, column=0, padx=10, pady=10)
+        self.aes_iv_label.insert(0, 'd58ce954203b7c9a9a9d467f59839249')
 
         self.aes_iv_entry = tk.Entry(self.widevine_frame, width=50)
         self.aes_iv_entry.grid(row=2, column=1, padx=10, pady=10)
